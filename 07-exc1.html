@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>  
+<head>
+  <title>functions-ex</title>
+</head>
+<body>
+
+   <button onclick=" greet('akhil','jhon')">Greet</button>
+   <button onclick="fah('25')">Calculate Fahrenheit</button>    
+    <button onclick="cell('86')">Calculate celsius</button>   
+    <button onclick="convertTemperature('25','c')">Calculate celsius and fahrenheits</button>  
+      <button onclick="convertLength('50','miles')">
+        miles to km
+      </button>    
+</body>
+  <script>
+    function greet(name,nextName) {
+        console.log("hello "+name);
+         console.log("hello "+nextName);
+    }
+    nam(akhil);
+
+    function fah(cel){
+        let result=(cel * 9/5) + 32;
+        console.log(result);
+    }
+    function cell(fah){
+        let result1=(fah-32)*5/9;
+    
+    console.log(result1);
+    }
+    
+    function convertTemperature(degree,unit)
+    {
+        if(unit == 'c'){
+            let cresult=(degree * 9/5) + 32;
+            console.log(cresult);
+        }
+        else if(unit == 'f'){
+            let fresult=(degree-32)*5/9;
+    }
+    console.log(fresult);
+    console.log(cresult);
+}
+
+function convertLength(lenth,from,t0){
+
+if(from =='miles'){
+    let distance =lenth*1.6;
+    console.log(distance); //convert miles to km
+}
+else if(from =='km'){
+    let distance =lenth*0.62;//convert km to miles
+    console.log(distance);}
+
+}
+
+
+  // fah(25);  // 77
+        
+
+
+    </script>
+</html>

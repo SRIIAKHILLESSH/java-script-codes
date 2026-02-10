@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Hour</title>
+</head>
+
+<body>
+  <p>Random Hour Greeting</p>
+
+  <script>
+    // Random hour between 0 and 23
+    const time = Math.floor(Math.random() * 24);
+
+    console.log("Random Hour:", time);
+
+    if (time >= 6 && time <= 12) {
+      console.log("Good morning");
+    } 
+    else if (time > 12 && time <= 17) {
+      console.log("Good afternoon");
+    } 
+    else {
+      console.log("Good night");
+    }
+  </script>
+</body>
+</html>
