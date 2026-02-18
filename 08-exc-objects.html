@@ -1,0 +1,66 @@
+<html>
+    <title>ojects-excercises</title>
+    <body>
+              <button onclick="comparePrice()">Compare Price</button>
+    </body>
+<script>
+    const product={
+        product1: 'basketball',
+        price: '2095',
+        product2:'football',
+        price:'1090'
+
+    };
+        console.log(product);
+        product.price+=500
+        console.log(product);
+
+        console.log(product.price);
+        product['delivery-time']='3 days';
+        console.log(product);
+        
+  
+
+
+             function comparePrice(product1, product2) {
+  if (product1.price < product2.price) {
+    return product1;
+  } else {
+    return product2;
+  }
+}
+const productA = {
+  name: 'basketball',
+  price: 2595
+};
+
+const productB = {
+  name: 'football',
+  price: 1995
+};
+const cheaperProduct = comparePrice(productA, productB);
+console.log(`The cheaper product is: ${cheaperProduct.name} with a price of ${cheaperProduct.price}`);
+
+function isSameProduct(product1, product2) {
+    const productnew1={
+        name:'basketball',
+        price:2095
+
+    }
+    const prodctnew2={
+        name:'basketball',
+        price:1999
+    }
+    if (productnew1.name === prodctnew2.name && productnew1.price === prodctnew2.price) {
+        return true;
+    } else {
+        return false;
+    }
+}
+const sameProduct=isSameProduct(productA, productB);
+console.log(`Are the products the same? ${isSameProduct(productA, productB)}`);
+
+console.log('Good morning'.toLowerCase());
+           
+        </script>
+</html>
